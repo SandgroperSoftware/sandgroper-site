@@ -6,17 +6,37 @@ html
 .centre-logo
 {
     display: block;
+    padding-top: 30px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.topleft-logo
+{
+    display:block;
+    padding-top:10px;
+    padding-left:10px;
+    margin-left:0px;
+    margin-right:auto;
+    width: 375px;
+    height: 75px;
 }
 
 h1
 {
     font-family: 'Barlow';
-    font-size:48px;
+    font-size:24px;
     text-align: center;
     color:rgb(225, 229, 233);
-    text-decoration: underline overline;
+}
+
+h2
+{
+    font-family: 'Barlow';
+    font-size:24px;
+    text-align: left;
+    color:rgb(225, 229, 233);
+    padding-left: 200px;
 }
 
 h3
@@ -25,7 +45,7 @@ h3
     font-size:36px;
     font-style:italic;
     text-align: center;
-    color:rgb(225, 52, 29);
+    color:lightcoral;
 }
 
 body
@@ -39,11 +59,14 @@ body
     background: linear-gradient(0deg, rgba(8,5,62,1), rgba(19,28,31,1) 35%, rgba(20,33,48,1));
 }
 
+/*  RADIAL MENU  */
+
 .circular-nav
 {
     width: 250px;
     height: 250px;
     margin: 50px auto 0;
+    padding: 60px;
     position: relative;
 }
 
@@ -89,7 +112,7 @@ body
 
 .radial-menu a:hover
 {
-    color:rgb(225, 229, 233);
+    color:rgb(205, 209, 213);
 }
 
 .menu-button
@@ -133,7 +156,157 @@ body
 
 .submenu-button:hover
 {
-    background-color: rgb(26, 52, 78);
+}
+
+/*  PARAGRAPH BLOCKS  */
+.float-children > * {
+    float:left;
+    margin-right:5px;
+}
+
+.clearfix {
+    *zoom:1 /* for IE */
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+
+.left-aligned
+{
+    font-family: 'Barlow';
+    padding-top: 5px;
+    padding-left: 25px;
+    margin-left:25px;
+    /* margin-right: 40%; */
+    text-align:left;
+    color:rgb(205, 209, 213);
+}
+
+.left-aligned a:hover
+{
+    color:lavender;
+}
+
+.left-aligned a:visited
+{
+    color:lightcoral;
+}
+
+.left-aligned a:link
+{
+    color:lightcyan;
+}
+
+.right-aligned-img
+{
+    width:100px;
+}
+
+#app-slideshow
+{
+    margin: 5px auto;
+    margin-left:50px;
+    margin-right:50px;
+    position: relative;
+    width: 300px;
+    padding: 5px;
+}
+
+#app-slideshow > div
+{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+}
+
+.feature-text
+{
+    animation: fadeIn ease 5s;
+    -webkit-animation: fadeIn ease 5s;
+    -moz-animation: fadeIn ease 5s;
+    -o-animation: fadeIn ease 5s;
+    -ms-animation: fadeIn ease 5s;
+
+    font-family: 'Barlow';
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    text-align: left;
+    font-size: 36px;
+    color:rgb(205, 209, 213);
+}
+
+@keyframes fadeIn 
+{
+    0%
+    {
+        opacity:0;
+    }
+    100%
+    {
+        opacity:1;
+    }
+}
+
+@-moz-keyframes fadeIn 
+{
+    0%
+    {
+        opacity:0;
+    }
+    100%
+    {
+        opacity:1;
+    }
+}
+
+@-webkit-keyframes fadeIn 
+{
+    0%
+    {
+        opacity:0;
+    }
+    100%
+    {
+        opacity:1;
+    }
+}
+
+@-o-keyframes fadeIn 
+{
+    0%
+    {
+        opacity:0;
+    }
+    100%
+    {
+        opacity:1;
+    }
+}
+
+@-ms-keyframes fadeIn 
+{
+    0%
+    {
+        opacity:0;
+    }
+    100%
+    {
+        opacity:1;
+    }
 }
 
 .footer
