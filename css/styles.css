@@ -1,6 +1,20 @@
+
+:root {
+    --bodyfont: 'Exo';
+}
+
 html
 {
     height: 100%;
+
+    font-family: var(--bodyfont);
+    color: #FFFFFF;
+}
+
+.fade {
+	display: none;
+	opacity: 1;
+	transition: opacity 0.5s ease-in-out;
 }
 
 .centre-logo
@@ -24,24 +38,24 @@ html
 
 h1
 {
-    font-family: 'Barlow';
+    font-family: var(--bodyfont);
     font-size:24px;
     text-align: center;
-    color:rgb(225, 229, 233);
+    color: #FFFFFF;
 }
 
 h2
 {
-    font-family: 'Barlow';
+    font-family: var(--bodyfont);
     font-size:24px;
     text-align: left;
-    color:rgb(225, 229, 233);
+    color: #FFFFFF;
     padding-left: 200px;
 }
 
 h3
 {
-    font-family: 'Barlow';
+    font-family: var(--bodyfont);
     font-size:36px;
     font-style:italic;
     text-align: center;
@@ -55,8 +69,19 @@ body
     margin-bottom: 100px;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background: rgb(8,5,62);
-    background: linear-gradient(0deg, rgba(8,5,62,1), rgba(19,28,31,1) 35%, rgba(20,33,48,1));
+    background: #000000;
+}
+
+.news-text
+{
+	display: none;
+	font-family: var(--bodyfont);
+    color: #229922;
+	text-align:center;
+}
+
+.news-text.visible {
+	display: block;
 }
 
 /*  RADIAL MENU  */
@@ -96,13 +121,13 @@ body
 
 .radial-menu a
 {
-    font-family: 'Barlow';
+    font-family: var(--bodyfont);
     font-size: 24px;
     display: block;
     height: 40px;
     width: 40px;
     text-decoration: none;
-    color: rgb(240, 248 ,255);
+    color: #FFFFFF;
     line-height: 40px;
     margin-left: -45px;
     margin-top: -45px;
@@ -112,40 +137,44 @@ body
 
 .radial-menu a:hover
 {
-    color:rgb(205, 209, 213);
+    color: #33FF33;
 }
 
 .menu-button
 {
-    font-family: 'Barlow';
+    font-family: var(--bodyfont);
     position: absolute;
     top: calc(50% - 30px);
     left: calc(50% - 30px);
     text-decoration: none;
     text-align: center;
-    color: rgb(240, 248 ,255);
+    color: #FFFFFF; 
     border-radius: 50%;
     display: block;
     height: 60px;
     width: 60px;
     line-height: 30px;
     padding: 0px;
+    background-color: #229922;
+    box-shadow: 0 0 15px 15px #229922;
+    transition: box-shadow 0.3s ease;
 }
 
 .menu-button:hover
 {
-    background-color: rgb(26, 52, 78);
+    //background-color: #229922;
+    box-shadow: 0 0 50px 20px rgba(50, 255, 50, 0), 0 0 50px 40px rgba(50, 255, 50, 0.3);
 }
 
 .submenu-button
 {
-    font-family: 'Barlow';
+    font-family: var(--bodyfont);
     position: absolute;
     top: calc(50% - 30px);
     left: calc(50% - 60px);
     text-decoration: none;
     text-align: center;
-    color: rgb(240, 248 ,255);
+    color: #FFFFFF;
     border-radius: 50%;
     display: block;
     height: 60px;
@@ -181,13 +210,13 @@ body
 
 .left-aligned
 {
-    font-family: 'Barlow';
+    font-family: var(--bodyfont);
     padding-top: 5px;
     padding-left: 25px;
     margin-left:25px;
     /* margin-right: 40%; */
     text-align:left;
-    color:rgb(205, 209, 213);
+    color: #FFFFFF;
 }
 
 .left-aligned a:hover
@@ -237,7 +266,7 @@ body
     -o-animation: fadeIn ease 5s;
     -ms-animation: fadeIn ease 5s;
 
-    font-family: 'Barlow';
+    font-family: 'Exo';
     padding-top: 15px;
     padding-left: 15px;
     padding-right: 15px;
@@ -246,7 +275,7 @@ body
     margin-right: 15px;
     text-align: left;
     font-size: 36px;
-    color:rgb(205, 209, 213);
+    color: #FFFFFF;
 }
 
 @keyframes fadeIn 
@@ -329,6 +358,13 @@ body
 {
     width: 48px;
     height: 48px;
+}
+
+.social-img:hover
+{
+    background-color: #22FF22;
+    border-radius: 50%;
+    box-shadow: 0 0 4px 4px #22FF22;
 }
 
 .socials-bar
